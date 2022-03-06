@@ -17,12 +17,16 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .main{
     background-color: #fff;
-    width: 50vw;
-    height: 50vh;
+    width: 95vw;
+    height: 80vh;
     padding: .6rem;
     border-radius: 10px;
     display: flex;
@@ -81,9 +85,9 @@ h1{
     transition: 0.3s;
 }
 
-.result-pc,
-.result-player{
+.result-display{
     height: 70%;
+    width: 40%;
     padding: .5rem;
     background-color: #2c8bf72f;
     border-radius: 10px;
@@ -100,13 +104,29 @@ h1{
     font-size: 1.5rem;
 }
 
+.result{
+    text-align: center;
+}
+
+.result p{
+    font-size: 1.5rem;
+    display: inline-block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+}
+
+.result span{
+    font-size: 2rem;
+    color: #2c8af78f;
+}
+
 .score{
     background-color: #2c8bf757;
     border-bottom: 1px solid white;
-    height: 20%;
+    height: 20vh;
+    width: 80%;
     border-radius: 10px;
     transition: 0.3s;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .title-score{
@@ -116,7 +136,7 @@ h1{
     text-shadow: 1px 1px 3px black;
     font-family: 'Source Code Pro', monospace;
     letter-spacing: 2px;
-    margin: 1rem;
+    margin-bottom: 5px;
 }
 
 .score-player{
@@ -137,65 +157,29 @@ h1{
     bottom: 5px;
 }
 
-@media (max-width: 1000px){
-    .btn{
-        width: 80%;
-    }
 
-    .btn:hover{
-        width: 100%;
-    }
-
-    .result{
-        margin: 40px 0px 0px 0px;
-        display: flex; 
-    }
-
-    .result-player{
-        margin: auto;
-        width: 45%;
-    }
-
-    .result-pc{
-        margin: auto;
-        width: 45%;
+@media screen and (min-width: 720px) {
+    .score{
+        width: 60%;
     }
 
 }
 
-@media (max-width: 700px){
-    .container{
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-       
-    }
+@media screen and (min-width: 1000px) {
     .main{
-        width: 95vw;
-        height: 80vh;
+        width: 50%;
     }
 
     .score{
-        margin-top: 5px;
-        margin-bottom: 10px;
-        width: 95vw;
-        height: 20vh;
-        border-bottom: 2px solid white;
-    }
-    .main-score{
-        width: 95%;
-    }
-
-    .score-pc{
         width: 50%;
+        margin: .5rem;
     }
 
     .score-player{
         width: 50%;
     }
-    .title-score{
-        margin-top: -5px;
+
+    .result-area{
+        justify-content: space-around;
     }
-    
 }
