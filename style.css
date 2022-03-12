@@ -177,9 +177,6 @@ h1{
     .score{
         width: 60%;
     }
-    .score-area{
-    }
-
 }
 
 @media screen and (min-width: 1000px) {
