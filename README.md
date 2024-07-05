@@ -1,7 +1,7 @@
 # Jokenpo
-<p> Clássico jogo de pedra papel tesoura com uma interface UI.
+<p> Classic rock paper scissors game with one UI interface. </p>
   
-  ## Tecnologias utilizadas
+  ## Technologies
   * HTML5
   * CSS3
   * Javascript
